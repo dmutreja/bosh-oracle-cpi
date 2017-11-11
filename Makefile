@@ -38,7 +38,7 @@ vet:
 	go tool vet $$(ls -d */ | grep -v vendor)
 
 # Runs all the unit tests 
-test: get-deps clean fmt lint vet build
+test: get-deps clean lint vet build
 	ginkgo -r -race -skipPackage=oci/test .
 
 # Runs a single unit test spec specified in TEST_SPEC 
