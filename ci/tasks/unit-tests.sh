@@ -4,6 +4,8 @@ set -e
 
 export GOPATH=$PWD/cpi-src
 
+echo $0
+`dirname $0`
 echo $PWD
-echo ls -lart 
+ls -lart 
 make test
