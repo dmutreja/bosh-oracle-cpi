@@ -7,5 +7,6 @@ image_resource:
     tag: "1.8.3"
 inputs:
   - name: cpi-src
+    path: cpi-src/github.com/oracle/bosh-oracle-cpi
 run:
-  path: cpi-src/ci/tasks/unit-tests.sh
+  path: cpi-src/github.com/oracle/bosh-oracle-cpi/ci/tasks/unit-tests.sh
